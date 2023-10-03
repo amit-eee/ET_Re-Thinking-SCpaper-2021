@@ -12,7 +12,7 @@ if (NOT DEFINED CMAKE_CUDA_STANDARD)
 endif()
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --expt-relaxed-constexpr --extended-lambda --default-stream per-thread -Xcompiler=${OpenMP_CXX_FLAGS}")
 SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_CXX_FLAGS}")  
-set(CMAKE_CUDA_ARCHITECTURES 70)
+set(CMAKE_CUDA_ARCHITECTURES 75)
 
 include_directories(
     ${CUDA_INCLUDE_DIRS}
